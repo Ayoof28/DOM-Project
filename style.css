@@ -1,0 +1,1633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red;*/
+}
+
+/* navbar */
+
+.navbar {
+    /* width: 100%; */
+    height: 10vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.navbar .logo img {
+    width: 80%;
+    height: auto;
+    margin-right: 20px;
+
+}
+
+.navbar .menu .nav-links {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: "Manrope", sans-serif;
+}
+
+
+
+ul {
+    list-style: none;
+    gap: 45px;
+    /* padding-top: 20px; */
+}
+
+a {
+    text-decoration: none;
+    color: rgb(161, 157, 157);
+}
+
+.menu .nav-links a:hover {
+    color: rgb(7, 56, 102);
+}
+
+.menu .nav-links a:hover {
+    color: rgb(7, 56, 102);
+}
+
+/* .button:hover {
+    color: white;
+    background-color: rgb(220, 33, 20);
+  } */
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.burger .line {
+    width: 34px;
+    height: 4px;
+    background-color: rgb(93, 175, 243);
+    margin: 5px;
+    margin-left: 90px;
+    cursor: pointer;
+
+
+}
+
+@media (max-width: 460px) {
+    .navbar .menu .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+/* section-1 */
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    /* max-width: 1000px; */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide {
+    margin-right: 20px;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc((100% - 40px) / 3);
+
+}
+
+.slide:last-child {
+    margin-right: 0;
+}
+
+.slide img {
+    width: 100vw;
+    height: 100%;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.prev {
+    left: 10px;
+
+}
+
+.next {
+    right: 10px;
+}
+
+.section-content {
+    position: relative;
+}
+
+.section-content {
+
+    font-size: 95px;
+}
+
+.section-content1 {
+    color: white;
+
+}
+
+.section-content1 p {
+    font-family: "Manrope", sans-serif;
+    font-size: 65px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    font-weight: 600;
+
+}
+
+.section-content1 .button1 {
+    width: 150px;
+    height: 7vh;
+    border: none;
+    position: relative;
+    top: 120px;
+    /* right: 70px; */
+    background: #4BAF47;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+}
+
+.button1:hover {
+    color: black;
+    background-color: rgb(220, 167, 20);
+}
+
+span {
+    font-size: 60px;
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.section-content1 .button1:hover {
+    background-color: rgb(248, 13, 13);
+    color: white;
+
+}
+
+
+@media (max-width: 460px) {
+    .section-content {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+    }
+
+    .section-content1 p {
+        font-size: 30px;
+        position: absolute;
+        top: 12%;
+        font-family: "Manrope", sans-serif;
+
+    }
+
+    .section-content1 .button1 {
+        width: 160px;
+        height: 6vh;
+        position: absolute;
+        /* top:95px ; */
+        left: 1%;
+        font-size: 20px;
+        font-family: "Manrope", sans-serif;
+
+    }
+
+    span {
+        font-size: 28px;
+        font-family: "Covered By Your Grace", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .slider {
+        position: relative;
+    }
+
+    .prev,
+    .next {
+        width: 30px;
+        height: 60px;
+        position: relative;
+        top: 30%;
+    }
+
+    .prev {
+        position: absolute;
+        top: 13%;
+    }
+
+    .next {
+        position: absolute;
+        top: 13%;
+    }
+}
+
+/* section-content2 */
+.section-content2 {
+    width: 60%;
+    height: 20vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 80px;
+    background-color: rgb(248, 253, 253);
+    position: relative;
+    bottom: 40px;
+    left: 20%;
+    border-radius: 8px;
+}
+
+.card {
+    height: 20vh;
+}
+
+.card img {
+    width: 40px;
+    position: relative;
+    right: 50px;
+    top: 30px;
+}
+
+.card h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+}
+
+.card p {
+    font-family: "Manrope", sans-serif;
+    opacity: 0.5;
+    line-height: 1.5;
+    font-weight: 50;
+}
+
+.section-content2 .card h4:hover {
+    color: rgb(192, 39, 39);
+}
+
+.section-content2 .card p:hover {
+    color: rgb(192, 39, 39);
+}
+
+.section-content2 .card:hover {
+    background-color: rgb(245, 241, 241);
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+.heading h4 {
+    color: #eec044;
+    font-size: 38px;
+}
+
+.heading h2 {
+    font-size: 40px;
+    color: #0f0e0d;
+}
+
+@media (max-width: 460px) {
+    .section-content2 {
+        width: 60%;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .card {
+        height: 20vh;
+    }
+
+    .card h4 {
+        font-size: 22px;
+        font-family: "Manrope", sans-serif;
+    }
+
+    .card p {
+        font-size: 20px;
+        opacity: 0.4;
+        font-family: "Manrope", sans-serif;
+
+    }
+
+    .card img {
+        width: 35px;
+        position: relative;
+
+    }
+
+}
+
+
+/* Container */
+.heading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 25px;
+}
+
+.heading h4 {
+    color: #eec044;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heading h2 {
+    font-size: 48px;
+    line-height: 57.6px;
+    text-align: center;
+    color: #1F1E17;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 60px;
+}
+
+.product-card {
+  background-color: #e6ece1;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.06);
+}
+.product-image img {
+  width: 350px;
+  height: 340px;
+  margin-bottom: 25px;
+}
+
+.product-name {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-price {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  color: green;
+  margin-bottom: 5px;
+}
+
+.product-rating {
+  font-size: 20px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 460px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    margin: 15px;
+  }
+  .product-image,
+  .product-name,
+  .product-price,
+  .product-rating {
+    width: 100%;
+    /* height: 100px; */
+    flex-wrap: wrap;
+
+  }
+
+  .product-name,
+  .product-price,
+  .product-rating {
+    text-align: center;
+  }
+}
+
+
+/* .heading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 25px;
+}
+
+.heading h4 {
+    color: #eec044;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heading h2 {
+    font-size: 48px;
+    line-height: 57.6px;
+    text-align: center;
+    color: #1F1E17;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+}
+
+
+.container {
+width: 100%;
+height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 60px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.06);
+}
+
+.product-image img {
+    width: 375px;
+    height: 375px;
+    top: 1334.59px;
+    left: 375px;
+    border-radius: 10px 0px 0px 0px;
+    margin-bottom: 25px;
+}
+
+.product-name {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 26px;
+    text-align: center;
+    color: #222222;
+}
+
+.product-price {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color: #4BAF47;
+    margin-bottom: 5px;
+}
+
+.product-rating {
+    font-size: 18px;
+    color: rgb(243, 139, 21);
+    margin-bottom: 10px;
+    left: 375px;
+
+}
+
+@media (max-width: 460px) {
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading h4 {
+        color: #eec044;
+        font-size: 34px;
+        text-align: center;
+        font-family: "Covered By Your Grace", cursive;
+
+    }
+
+    .heading h2 {
+        font-size: 34px;
+        text-align: center;
+        color: #1F1E17;
+        font-family: "Manrope", sans-serif;
+
+    }
+
+    .product-card {
+        width: 100%;
+        height: auto;
+        font-family: "Manrope", sans-serif;
+        flex-wrap: wrap;
+        padding-right: 120px;
+        text-align: center;
+
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+        font-family: "Manrope", sans-serif;
+        flex-wrap: wrap;
+
+        text-align: center;
+
+    }
+
+    .product-name {
+        width: 100%;
+        height: auto;
+        font-family: "Manrope", sans-serif;
+        font-size: 26px;
+        flex-wrap: wrap;
+        margin-right: 70px;
+        text-align: center;
+        padding: 10px;
+
+
+    }
+
+    .product-price {
+        width: 100%;
+        height: auto;
+        font-family: "Manrope", sans-serif;
+        font-size: 20px;
+        flex-wrap: wrap;
+        margin-right: 70px;
+        text-align: center;
+        padding: 10px;
+
+
+    }
+
+    .product-rating {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        font-family: "Manrope", sans-serif;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 70px;
+        text-align: center;
+        padding: 10px;
+
+    }
+} */
+
+/* Section-content 3 */
+
+.section-content3 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.section-heading h4 {
+    color: #eec044;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Covered By Your Grace", cursive;
+
+}
+
+.section-heading h3 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 57.6px;
+    text-align: center;
+    color: #1F1E17;
+}
+
+.section-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    /* background-color: #e6ece1; */
+}
+
+.product-image1 {
+  /* background-color: #e6ece1; */
+  border-radius: 10px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image1 img {
+
+    width: 220px;
+    height: 220px;
+}
+
+.product-image1:hover {
+   
+    transform: scale(1.05);
+}
+
+.product {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: center;
+   
+
+}
+
+.price {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #4BAF47;
+    text-align: center;
+}
+
+.rating {
+    font-size: 20px;
+    color: #eec044;
+    text-align: center;
+}
+
+
+
+@media (max-width: 460px) {
+    .section-content3 {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 15px;
+
+    }
+
+    .section-heading h4 {
+        font-size: 34px;
+        color: #eec044;
+        text-align: center;
+        font-family: "Covered By Your Grace", cursive;
+
+    }
+
+    .section-heading h3 {
+        font-family: "Manrope", sans-serif;
+        font-size: 34px;
+        text-align: center;
+        color: #1F1E17;
+
+    }
+
+    .section-items {
+        width: 100%;
+        height: auto;
+        /* gap: 50px; */
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+
+    .product-image1 img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .product-image1:hover {
+        transform: scale(1.05);
+    }
+
+    .product {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 26px;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+
+    .price {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .rating {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* invoice */
+
+.invoice {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+
+
+
+.bill-container input {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    border-color: rgb(141, 46, 230);
+    border-width: 0.1px;
+    border-radius: 9px;
+  
+  }
+
+.bill-container {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(81, 12, 146);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+.button2 button {
+    font-family: "Manrope", sans-serif;
+     font-size: 17px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(65, 119, 221);
+    color: rgb(224, 228, 235);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.button2 button:hover {
+    color: #FFFFFF;
+    background-color: rgb(220, 33, 20);
+
+}
+
+.invoice h2 {
+
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 57.6px;
+    text-align: center;
+    color: rgb(97, 16, 173);
+
+}
+
+.invoice h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    color: rgb(81, 12, 146);
+
+}
+
+@media (max-width: 460px) {
+    .invoice {
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: 10px;
+    
+    }
+  
+    .bill-container {
+      width: 350px;
+      font-family: "Manrope", sans-serif;
+      font-size: 25px;
+     
+    }
+  
+    .bill-container input {
+      font-family: "Manrope", sans-serif;
+      font-size: 22px;
+      width: 340px;
+      height: auto;
+    text-align: start;
+  
+    }
+  
+    .button2 button {
+      font-family: "Manrope", sans-serif;
+      font-size: 23px;
+      width: 120px;
+      height: 8vh;
+      background-color: rgb(117, 155, 227);
+      color: rgb(224, 228, 235);
+      border-radius: 5px;
+      /* align-items: start; */
+  
+    }
+  
+    .button2 button:hover {
+      color: #e6e2e2;
+  
+  
+    }
+  
+    .invoice h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: 45px;
+      color: #0f0e0d;
+    
+  
+    }
+  
+    .invoice h3 {
+      font-family: "Manrope", sans-serif;
+      font-size: 20px;
+      color: rgb(30, 27, 24);
+  
+  
+    }
+  }
+/* section-content5  */
+.section-page5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+  }
+  
+  .section-page5 .image11 img {
+    width: 100%;
+    height: auto;
+    /* left: 10%; */
+    border-radius: 8px;
+  }
+  
+  .section-content5 h4 {
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #eec044;
+  }
+  
+  .section-content5 h2 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    line-height: 80px;
+    text-align: left;
+    color: #1F1E17;
+  
+  }
+ 
+    .section-content5 p {
+    width: 526.62px;
+    height: 90px;
+    top: 116.59px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #878680;
+  
+  }
+  
+  .section-content5 h3 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    padding-left: 90px;
+    position: relative;
+    bottom: 50px;
+    color: #1F1E17;
+  }
+  
+  .section-content5 h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    opacity: 0px;
+    padding-left: 90px;
+    position: relative;
+    bottom: 50px;
+    color: #878680;
+  
+  }
+  
+  .section-content5 .button15 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    width: 170px;
+    height: 45px;
+    background-color: #4BAF47;
+    color: #FFFFFF;
+    border-radius: 7px;
+    border: none;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  
+  }
+  
+  .section-content5 .button15:hover {
+    background-color: rgb(220, 33, 20);
+  }
+  
+  @media (max-width: 460px) {
+    .section-page5 {
+      width: 100%;
+      height: 100%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      /* padding: 10px; */
+    }
+  
+    .image11 {
+      width: 200px;
+      height: 30%;
+    }
+  
+    .section-content5 h4 {
+      font-family: "Covered By Your Grace", cursive;
+      font-style: normal;
+      font-size: 35px;
+      color: #eec044; 
+      text-align: center;
+    }
+  
+    .section-content5 h2 {
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 45px;
+      color: #1F1E17;
+      text-align: center;
+    }
+  
+    .section-content5 p {
+      width: 100%;
+      height: auto;
+      font-family: "Manrope", sans-serif;
+      font-size: 16px;
+      color: #878680;
+      /* text-align: left; */
+      padding-left: 60px;
+  
+  
+    }
+  
+    .section-content5 .button15 {
+      font-family: "Manrope", sans-serif;
+      width: 200px;
+      height: 9vh;
+      background-color: #4BAF47;
+      color: #FFFFFF;
+      border-radius: 7px;
+      border: none;
+      font-size: 20px;
+  
+    }
+  
+  
+    .image11 img {
+      width: 380px;
+      height: auto;
+            
+    }
+  }
+
+/* section-content6  */
+
+.section-page6 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding: 20px;
+  
+  }
+  
+  .section-image1 {
+    position: relative;
+  }
+  
+  .section-page6 .section-image1 img {
+    position: relative;
+    width: 500px;
+    height: 650px;
+    left: 7.5px;
+  
+  }
+  
+  .section-page6 .section-image2 img {
+    position: absolute;
+    margin-top: 140px;
+    width: 28%;
+    left: 22%;
+  
+  }
+  
+  .section-container1 h4 {
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #eec044;
+  }
+  
+  .section-container1 h2 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    line-height: 80px;
+    text-align: left;
+    color: #1F1E17;
+  }
+  
+  .section-container1 .faq {
+    width: 70%;
+    /* height: 10vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  
+  .section-container1 .faq .question h2 {
+    width: 100%;
+    height: 8vh;
+  
+  }
+  
+  .section-container1 .faq .question img {
+    width: 40px;
+    height: 14vh;
+    margin-top: 30px;
+  }
+  
+  .section-container1 .faq .question {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .section-container1 .faq .question h2 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    color: #1F1E17;
+    font-size: 20px;
+  }
+  
+  .section-container1 .faq .question img {
+    height: 35px;
+    transition: all 0.5s;
+  }
+  
+  .section-container1 .faq.active .question img {
+    transform: rotate(180deg);
+  }
+  
+  .section-container1 .faq .answer p {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #878680;
+  }
+  
+  .section-container1 .faq .answer {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  
+  .section-container1 .faq.active .answer {
+    max-height: 500px;
+  }
+  
+  @media (max-width: 460px) {
+    .section-page6 {
+      width: 100%;
+      height: 100%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .section-page6 .section-image1 img {
+      position: relative;
+      width: 300px;
+      height: 350px;
+    }
+  
+    .section-page6 .section-image2 img {
+      position: absolute;
+    }
+  
+    .section-page6 .section-image2 img {
+      position: relative;
+      /* width: 30%; */
+      /* top: 30px; */
+  
+    }
+  .section-page6 .section-image1 {
+  display: none;
+}
+  .section-page6 .section-image2 {
+    display: none;
+  }
+  
+    .section-container1 h4 {
+      font-family: "Covered By Your Grace", cursive;
+      font-size: 28px;
+  
+    }
+  
+    .section-container1 h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: 32px;
+      text-align: center;
+      color: #1F1E17;
+    }
+  
+    .section-container1 .faq .question h2 {
+      width: 100%;
+      height: auto;
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  }
+  
+  
+  
+  
+  /* <!-- Section - Page7 --> */
+  .section-page7 {
+    width: 100%;
+    height: auto;
+  }
+  
+  .section-content7 {
+    text-align: center;
+  }
+  
+  .section-content7 h5 {
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    color: #eec044;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+  }
+  
+  .section-content7 h1 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 57.6px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .section-content71 img {
+    width: 100%;
+    height: 70vh;
+    padding: 15px;
+    border-radius: 35px;
+  }
+  
+  .section-content71 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .image22,
+  .image23,
+  .image24 {
+    width: 20%;
+    height: 450px;
+    margin: 20px;
+    display: flex;
+    padding: 40px;
+  }
+  
+  @media (max-width: 460px) {
+    .section-page7 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .section-content7 h5 {
+      font-family: "Covered By Your Grace", cursive;
+      color: #eec044;
+      font-size: 35px;
+      text-align: center;
+  
+    }
+  
+    .section-content7 h1 {
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 40px;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .section-content71 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-right: 55px;
+      padding-left: 10px;
+    }
+  
+    .image22,
+    .image23,
+    .image24 {
+      width: 300px;
+    }
+  
+  }
+  
+  /* <!-- Section - Page8 --> */
+  
+  .section-page8 {
+    width: 100%;
+    height: auto;
+  }
+  
+  .section-content8 {
+    text-align: center;
+  }
+  
+  .section-content8 h5 {
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    color: #eec044;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+  }
+  
+  .section-content8 h1 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 57.6px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .section-content81 img {
+    width: 100%;
+    height: 50vh;
+    padding: 15px;
+    border-radius: 35px;
+  }
+  
+  .section-content81 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  @media (max-width: 460px) {
+    .section-content81 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .image22,
+    .image23,
+    .image24 {
+      width: 400px;
+    }
+  
+    .images {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .images img {
+      width: 100px;
+      height: auto;
+      padding: 10px;
+    }
+  }
+  
+  /* <!-- Section - Page9 --> */
+  .footer {
+    width: 100%;
+    height: 60vh;
+    background-color: #24231d;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    padding-bottom: 100px;
+  }
+  
+  .footer1 img {
+    width: 150px;
+    height: 6vh;
+    left: 14.5px;
+  
+  }
+  
+  .footer1 p {
+    width: 269.04px;
+    height: 90px;
+    color: #A5A49A;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+  
+  }
+  
+  .footer11 img {
+    width: 100%;
+    height: 10vh;
+    margin-top: 25px;
+  }
+  
+  .footer2 {
+    /* width: 20%; */
+    padding: 10px;
+    color: #A5A49A;
+    line-height: 20px;
+    margin-top: 100px;
+    padding-bottom: 70px;
+  }
+  
+  .footer2 h4 {
+    width: 73.2px;
+    height: 36px;
+    padding-bottom: 50px;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    /* border-bottom: 3px solid #4BAF47; */
+  }
+  
+  .footer2 img {
+    height: 12px;
+    padding-right: 10px;
+  
+  }
+  
+  .footer2 p {
+    width: 100%;
+    height: 3vh;
+    font-family: "Manrope", sans-serif;
+  }
+  
+  .footer3 {
+    /* width: 20%; */
+    /* padding: 10px; */
+    color: #A5A49A;
+    margin-bottom: 47px;
+    line-height: 25px;
+  
+  }
+  
+  .footer3 h4 {
+    width: 73.2px;
+    height: 36px;
+    padding-bottom: 50px;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    /* border-bottom: 3px solid #4BAF47; */
+  }
+  
+  .footer3 h6 {
+    font-family: "Manrope", sans-serif;
+    color: #eec044;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: left;
+  }
+  
+  .footer3 p {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  .footer4 {
+    /* width: 20%; */
+    /* padding: 10px; */
+    color: #A5A49A;
+    margin-bottom: 13px;
+    line-height: 25px;
+  
+  }
+  
+  .footer4 h4 {
+    width: 73.2px;
+    height: 36px;
+    padding-bottom: 50px;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    /* border-bottom: 3px solid #4BAF47; */
+  }
+  
+  .footer4 img {
+    height: 10px;
+    padding-right: 10px;
+  }
+  
+  .footer4 p {
+    height: 2vh;
+    font-family: "Manrope", sans-serif;
+  
+  }
+  
+  .footer4 input {
+    padding: 20px;
+    width: 70%;
+    height: 6vh;
+    margin-right: 10px;
+    border: 1px solid #dbe1e4;
+    border-radius: 5px;
+    background-color: #dbe1e4;
+    font-family: "Manrope", sans-serif;
+  }
+  
+  .footer4 button {
+    width: 60px;
+    height: 5.8vh;
+    /* padding: 10px 20px; */
+    border: none;
+    background-color: #3B82F6;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Manrope", sans-serif;
+  }
+  
+  .copyright {
+    width: 100%;
+    height: 10vh;
+    font-size: 0.9em;
+    color: #A5A49A;
+    background-color: #1a1a15;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 20PX;
+    padding-top: 20px;
+    text-align: center;
+  
+  }
+  
+  @media (max-width: 460px) {
+    .footer {
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+    }
+  
+    .footer1 {
+      width: 100%;
+    }
+  
+    .footer2,
+    .footer3,
+    .footer4 {
+      width: 100%;
+    }
+  
+    .copyright {
+      width: 100%;
+      height: 10vh;
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+  
+  
+    }
+  
+  }
+
